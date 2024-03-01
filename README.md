@@ -74,7 +74,9 @@ import cv2
 image=cv2.imread('dipimage.jpg',0)
 cv2.imwrite('Jerushlin.jpg',image)
 ```
-![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/7c390c6a-67ae-48cd-b4e7-5238c1496820)
+![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/25d45e6c-8f19-4df9-ac25-1f8ee4c8694d)
+![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/9f59b06f-cdfa-492c-be67-aba1bf26f791)
+
 
 
 ### iv)Shape of the Image
