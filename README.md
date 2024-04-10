@@ -45,13 +45,12 @@ Split and merge HSV Image
 ### i) Read and display the image
 ```
 import cv2
-image=cv2.imread('dipimage.jpg',1)
+image=cv2.imread('jero.JPG',1)
 cv2.imshow('Jerushlin',image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-
-![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/7e40e7dd-3371-4dcc-9f57-e09b9fde3351)
+![Screenshot 2024-04-10 111617](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/489dc6d4-5bed-46c6-81c3-4bdf866f183c)
 
 
 ### ii) Resized Image
@@ -63,36 +62,31 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 ```
-![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/0f7bb005-905c-448b-80e6-008d2d054a91)
-
-
+![Screenshot 2024-04-10 111820](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/975061b5-506f-4781-bf5c-b3dbef9fea73)
 
 
 ### iii)Write the image
 ```
 import cv2
-image=cv2.imread('dipimage.jpg',0)
+image=cv2.imread('jero.JPG',0)
 cv2.imwrite('Jerushlin.jpg',image)
 ```
-![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/25d45e6c-8f19-4df9-ac25-1f8ee4c8694d)
-![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/9f59b06f-cdfa-492c-be67-aba1bf26f791)
-
-
+![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/35da421c-e1c1-4149-92f1-4c7de4a63e7d)
 
 ### iv)Shape of the Image
 ```
 import cv2
-image=cv2.imread('dipimage.jpg',1)
+image=cv2.imread('jero.JPG',1)
 print(image.shape)
 ```
-![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/5ff9de19-5efc-48b8-8312-1747704e42c3)
+![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/3b37951e-0d92-4520-b7c3-55024c23ebf9)
 
 
 ### v)Access rows and columns
 ```
 import random
 import cv2
-image=cv2.imread('dipimage.jpg',1)
+image=cv2.imread('jero.JPG',1)
 image=cv2.resize(image,(350,350))
 for i in range (150,200):
     for j in range(image.shape[1]):
@@ -103,14 +97,12 @@ cv2.imshow('part image',image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/3062def4-954a-4da6-bec1-2ede7d540166)
-
-
+![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/ddab8044-61c2-4fbd-bea3-34114ed63ab0)
 
 ### vi)Cut and paste portion of image
 ```
 import cv2
-image=cv2.imread('dipimage.jpg',1)
+image=cv2.imread('jero.JPG',1)
 image=cv2.resize(image,(350,350))
 tag =image[150:200,110:160]
 image[110:160,150:200] = tag
@@ -118,13 +110,12 @@ cv2.imshow('partimage1',image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/bd63523f-27a2-4f01-9526-abf0d38ecd2f)
-
+![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/6cb8533e-7bd2-4b90-96da-a1fbf41cec09)
 
 ### vii) BGR and RGB to HSV and GRAY
 ```
 import cv2
-img = cv2.imread('dipimage.jpg',1)
+img = cv2.imread('jero.JPG',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 
@@ -143,14 +134,15 @@ cv2.imshow('RGB2GRAY',gray2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/4be241cd-8154-4c2d-a3bb-e3d0f1c3e5ae)
-![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/c99f2daf-23b3-4afd-ab2d-2fc35b186a1b)
+![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/56d59916-cdac-432f-87c1-b23fa82a7b6d)
+![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/b5d19e22-02b1-4de8-b5bc-c7114032aa73)
+
 
 
 ### viii) HSV to RGB and BGR
 ```
 import cv2
-img = cv2.imread('dipimage.jpg')
+img = cv2.imread('jero.JPG')
 img = cv2.resize(img,(350,350))
 
 img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
@@ -165,13 +157,14 @@ cv2.imshow('HSV2RGB',BGR)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/2e43876d-025c-496d-9ff0-85cfefb26878)
+![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/ed1abadf-c1e7-44c6-8f5c-940fb06b0ed8)
+![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/9abfd42f-1d8a-45bb-84aa-3f00c9b3d938)
 
 
 ### ix) RGB and BGR to YCrCb
 ```
 import cv2
-img = cv2.imread('dipimage.jpg')
+img = cv2.imread('jero.JPG')
 img = cv2.resize(img,(350,350))
 cv2.imshow('Original RGB Image',img)
 
@@ -184,9 +177,8 @@ cv2.imshow('BGR-2-YCrCb',YCrCb2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/413b4883-0a34-4d75-837e-3dce3667209c)
-
-
+![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/1745d68d-84d6-41aa-8faa-3dcfcebc7c61)
+![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/3e9eae20-6f82-4bb4-ad5f-a9a7eac72b45)
 
 ### x) Split and merge RGB Image
 ```
@@ -208,14 +200,13 @@ cv2.imshow('Merged RGB image',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/58da1bbe-135b-43fc-9022-048098711c7d)
-
+![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/ddce64c7-8d35-406f-b990-015447f3b82b)
 
 
 ### xi) Split and merge HSV Image
 ```
 import cv2
-img = cv2.imread("dipimage.jpg",1)
+img = cv2.imread("jero.JPG",1)
 img = cv2.resize(img,(370,370))
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
 
@@ -231,9 +222,7 @@ cv2.imshow('Merged',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/24879c98-e306-478d-9ae8-819d1acf8ad2)
-
-
+![image](https://github.com/Jerushli/COLOR_CONVERSIONS_OF-IMAGE/assets/120041243/f1118731-12e0-4e84-be27-b3bd25f4c213)
 
 ## Result:
 Thus the images are read, displayed, and written ,and color conversion was performed between RGB, HSV and YCbCr color models successfully using the python program.
